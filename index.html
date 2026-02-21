@@ -39,6 +39,68 @@
                 </ul>
             </nav>
         </div>
+        <style>
+            /* ===== Mobile Optimizations for Booking Section ===== */
+@media (max-width: 768px) {
+  /* Contact info boxes – reduce padding and make them stack */
+  .contact-item {
+    padding: var(--spacing-md);   /* Smaller padding */
+  }
+  .contact-details h3 {
+    font-size: 1.3rem;            /* Adjust heading */
+  }
+
+  /* Map container – make it responsive */
+  .map-container {
+    width: 100%;                   /* Take full width */
+    height: 300px;                 /* Fixed height, adjust as needed */
+    margin-top: var(--spacing-sm);
+  }
+  .map-container iframe {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Contact form – reduce padding */
+  .contact-form {
+    padding: var(--spacing-lg);
+  }
+
+  /* Form inputs – ensure they are touch-friendly */
+  .form-control {
+    padding: 12px 16px;            /* Slightly smaller padding */
+    font-size: 16px;               /* Prevent zoom on iOS */
+  }
+
+  /* Submit button – full width */
+  .contact-form .btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Further adjustments for very small phones */
+  .contact-item {
+    padding: var(--spacing-sm);
+  }
+  .contact-details h3 {
+    font-size: 1.2rem;
+  }
+  .contact-details p {
+    font-size: 0.95rem;
+  }
+
+  /* Map height a bit smaller */
+  .map-container {
+    height: 250px;
+  }
+
+  /* Form heading */
+  .contact-form h3 {
+    font-size: 1.4rem;
+    margin-bottom: var(--spacing-sm);
+  }
+}
     </header>
 
     <!-- Home Page Content -->
