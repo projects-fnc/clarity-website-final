@@ -966,7 +966,8 @@ footer {
     .hero-content-feature {
         min-width: 100%;
     }
-    /* ===== Mobile Optimizations for Booking Section ===== */
+}
+/* ===== Mobile Optimizations for Booking Section ===== */
 @media (max-width: 768px) {
   /* Contact info boxes – reduce padding and make them stack */
   .contact-item {
@@ -1026,5 +1027,4 @@ footer {
     font-size: 1.4rem;
     margin-bottom: var(--spacing-sm);
   }
-}
 }
